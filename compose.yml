@@ -1,0 +1,12 @@
+services:
+  w3r5l3y-ssh:
+    build: .
+    container_name: w3r5l3y-ssh
+    ports:
+      - "23234:23234"
+    environment:
+      SSH_ADDR: "0.0.0.0:23234"
+      SSH_HOST_KEY_PATH: "/data/ssh_host_ed25519_key"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
