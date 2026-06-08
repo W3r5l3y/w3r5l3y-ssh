@@ -8,6 +8,7 @@ require (
 	charm.land/log/v2 v2.0.0
 	charm.land/wish/v2 v2.0.1
 	github.com/charmbracelet/ssh v0.0.0-20250826160808-ebfa259c7309
+	github.com/muesli/reflow v0.3.0
 )
 
 require (

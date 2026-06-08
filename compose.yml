@@ -7,6 +7,10 @@ services:
     environment:
       SSH_ADDR: "0.0.0.0:23234"
       SSH_HOST_KEY_PATH: "/data/ssh_host_ed25519_key"
+      SSH_THEME: "violet"
     volumes:
-      - ./data:/data
+      - w3r5l3y_ssh_data:/data
     restart: unless-stopped
+
+volumes:
+  w3r5l3y_ssh_data:
